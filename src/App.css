@@ -1,0 +1,93 @@
+#root {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 ;
+    padding: 0;
+    text-align: center;
+    /* font-size: small; */
+  }
+  .nav{
+    height: 70px;
+    background-color: #0f24e7aa;
+    padding: 20px;
+    font-size: 1.3rem;
+    /* backdrop-filter: blur(0.8); */
+    /* filter: blur(2px) */
+    /* -webkit-filter: blur(8px); */
+  }
+  .nav a{
+    margin-left: 30px;
+   
+    
+  }
+  .nav a:hover{
+    color: red;
+  }
+  .form{
+    width: 100%;
+    /* background-color: #61dafbaa; */
+  }
+  .btn-submit{
+    outline-style: solid;
+    border: transparent;
+    outline-color: #0f25e4aa;
+    color: #0d22e3aa;
+    padding: 7px;
+    width: 100px;
+    border-radius: 3px;
+  }
+  .btn-submit:hover{
+    background-color: #0f25e4aa;
+    color: white;
+  }
+  .form select{
+    /* width: 75%; */
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  .container-card{
+    width: 100%;
+  
+  }
+  .card-box{
+    border-top: 4px solid purple;
+    width: 22%;
+  }
+  .card-box:hover{
+    border-top:0px solid;
+    border:2px solid purple
+  }
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
