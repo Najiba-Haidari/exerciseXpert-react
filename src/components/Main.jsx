@@ -15,7 +15,7 @@ export default function Main(props) {
     }
     
     const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${selectedBp}?limit=10`;
-    const API_KEY = "a3882e0d78msh0ee7afc0a7eb84fp140078jsn97b32d56c79a";
+    const API_KEY = "90e977b5d8mshf5f1067f878f899p12c888jsnc176b90ca77c";
     const getBpData = async function () {
         const options = {
             method: 'GET',
@@ -52,6 +52,7 @@ export default function Main(props) {
     // console.log(getBpData())
     return (
         <div className="">
+        <h1 className='m-2'>Choose your <span>Exercise</span></h1>
             <form className="form my-5 py-5" onSubmit={handleSubmit}>
                 <select placeholder='Select option' className="w-50 p-2 m-2" onChange={handleChange}>
                     {/* <option value="Select a body part " selected>Select a body part</option> */}

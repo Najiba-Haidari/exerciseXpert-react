@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react'
 function App() {
   const [bodyParts, setBodyParts] = useState([])
   const url = "https://exercisedb.p.rapidapi.com/exercises/bodyPartList";
-  const API_KEY = "a3882e0d78msh0ee7afc0a7eb84fp140078jsn97b32d56c79a";
+  const API_KEY = "90e977b5d8mshf5f1067f878f899p12c888jsnc176b90ca77c";
 
   const getData = async function () {
     const options = {
