@@ -10,6 +10,7 @@ export const ExerciseProvider = ({ children }) => {
   const saveExercise = (exercise) => {
     if (!savedExercises.some(ex => ex.id === exercise.id)) {
       setSavedExercises([...savedExercises, exercise]);
+    //   document.getElementById("save").textContent= "SAVED"
       alert('Exercise saved!');
     } else {
       alert('Exercise already saved.');
