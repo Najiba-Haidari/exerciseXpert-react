@@ -13,7 +13,7 @@ export default function Cards(props) {
                         <div className="card-body">
                             <h5 className="card-title">{e.name}</h5>
                             <p className="card-text">Target: {e.target}</p>
-                            <button className="btn btn-primary w-100" onClick={() => saveExercise(e)}>Save</button>
+                            <button id="save" className="btn btn-primary w-100" onClick={() => saveExercise(e)}>Save</button>
                             {/* <a href="#" className="btn btn-primary">Instructions</a> */}
                         </div>
                     </div>
