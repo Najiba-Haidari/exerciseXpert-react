@@ -2,18 +2,18 @@ import { useState, useEffect } from 'react';
 import Card from "./Card.jsx"
 
 export default function Main(props) {
-    
+
     // console.log(props.bodyParts)
     // onChange={(e) => props.setBodyPart(e.target.value)}
     const [selectedBp, setSelectedBp] = useState("")
     const [bpData, setBpData] = useState([]);
-    const [isSubmitted, setIsSubmitted]= useState(false)
+    const [isSubmitted, setIsSubmitted] = useState(false)
 
     const handleChange = function (e) {
         setIsSubmitted(false)
         setSelectedBp(e.target.value)
     }
-    
+
     const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${selectedBp}?limit=10`;
     const API_KEY = "90e977b5d8mshf5f1067f878f899p12c888jsnc176b90ca77c";
     const getBpData = async function () {
@@ -27,7 +27,7 @@ export default function Main(props) {
         try {
             const response = await fetch(url, options)
             const data = await response.json()
-              setBpData(data)
+            setBpData(data)
             console.log(bpData)
 
         } catch (error) {
@@ -35,13 +35,13 @@ export default function Main(props) {
         }
     }
     useEffect(() => {
-        if (selectedBp && isSubmitted){
+        if (selectedBp && isSubmitted) {
             getBpData()
-        }     
+        }
     }, [selectedBp, isSubmitted])
 
 
-    
+
     const handleSubmit = function (e) {
         e.preventDefault();
         if (selectedBp) {
@@ -52,7 +52,7 @@ export default function Main(props) {
     // console.log(getBpData())
     return (
         <div className="">
-        <h1 className='m-2 heading'>Choose your <span id='title'>Exercise</span></h1>
+            <h1 className='m-2 heading'>Choose your <span id='title'>Exercise</span></h1>
             <form className="form my-5 py-5" onSubmit={handleSubmit}>
                 <select placeholder='Select option' className="w-50 p-2 m-2" onChange={handleChange}>
                     {/* <option value="Select a body part " selected>Select a body part</option> */}
@@ -62,12 +62,10 @@ export default function Main(props) {
                 </select>
                 <input className="btn-submit " value="Search" type="submit" />
             </form>
-            <div className=''>
-            {isSubmitted && bpData ? (
+            <div className='container'>
+                {isSubmitted && bpData ? (
                     bpData.length > 0 ? (
-                        <div className='d-flex flex-row flex-wrap'>
                         <Card bpData={bpData} setBpData={setBpData} />
-                        </div>
                     ) : (
                         <h2>Loading Exercises for {selectedBp}</h2>
                     )
