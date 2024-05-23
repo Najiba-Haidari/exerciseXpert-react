@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ExerciseContext } from '../ExerciseContext'; // Adjust the import path
+import { ExerciseContext } from '../ExerciseContext.jsx'
 
 export default function SavedEx() {
   const { savedExercises, deleteExercise } = useContext(ExerciseContext);

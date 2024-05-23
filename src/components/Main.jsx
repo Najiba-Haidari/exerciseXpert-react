@@ -52,7 +52,7 @@ export default function Main(props) {
     // console.log(getBpData())
     return (
         <div className="">
-        <h1 className='m-2'>Choose your <span>Exercise</span></h1>
+        <h1 className='m-2 heading'>Choose your <span id='title'>Exercise</span></h1>
             <form className="form my-5 py-5" onSubmit={handleSubmit}>
                 <select placeholder='Select option' className="w-50 p-2 m-2" onChange={handleChange}>
                     {/* <option value="Select a body part " selected>Select a body part</option> */}
@@ -65,7 +65,9 @@ export default function Main(props) {
             <div className=''>
             {isSubmitted && bpData ? (
                     bpData.length > 0 ? (
+                        <div className='d-flex flex-row flex-wrap'>
                         <Card bpData={bpData} setBpData={setBpData} />
+                        </div>
                     ) : (
                         <h2>Loading Exercises for {selectedBp}</h2>
                     )

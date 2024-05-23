@@ -61,13 +61,32 @@
   
   }
   .card-box{
-    border-top: 4px solid purple;
+    
     width: 22%;
   }
   .card-box:hover{
-    border-top:0px solid;
-    border:2px solid purple
+    border-top: 4px solid purple;
   }
+  #title{
+    /* color: white; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(29, 15, 234);
+    width: 100px;
+    height: 100px;
+    color: rgb(244, 239, 239);
+    animation-name: example;
+    animation-duration: 30s;
+  }
+  @keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: rgb(243, 4, 128);}
+    100% {color: rgb(64, 212, 64);}
+  }
+  .heading{
+    color:  rgb(29, 15, 234);
+  }
+
   @keyframes logo-spin {
     from {
       transform: rotate(0deg);
