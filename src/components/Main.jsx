@@ -52,8 +52,8 @@ export default function Main(props) {
     // console.log(getBpData())
     return (
         <div className="">
-            <h1 className='m-2 heading'>Choose your <span id='title'>Exercise</span></h1>
-            <form className="form my-5 py-5" onSubmit={handleSubmit}>
+            <h1 className='m-5 heading '>Choose your <span id='title'>Exercise</span></h1>
+            <form className="form my-3 py-5" onSubmit={handleSubmit}>
                 <select placeholder='Select option' className="w-50 p-2 m-2" onChange={handleChange}>
                     {/* <option value="Select a body part " selected>Select a body part</option> */}
                     {props.bodyParts.map((b) => {
@@ -70,7 +70,7 @@ export default function Main(props) {
                         <h2>Loading Exercises for {selectedBp}</h2>
                     )
                 ) : (
-                    <h2>Please select a body part and click Search</h2>
+                    <h3>Please select a body part and click Search</h3>
                 )}
             </div>
         </div>

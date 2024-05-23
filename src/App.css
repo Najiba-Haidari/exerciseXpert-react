@@ -69,18 +69,18 @@
   }
   #title{
     /* color: white; */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(29, 15, 234);
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(29, 15, 234); */
     width: 100px;
     height: 100px;
-    color: rgb(244, 239, 239);
+    /* color: rgb(244, 239, 239); */
     animation-name: example;
     animation-duration: 30s;
   }
   @keyframes example {
     0%   {color: red;}
     25%  {color: yellow;}
-    50%  {color: rgb(243, 4, 128);}
+    50%  {color: rgb(219, 50, 137);}
     100% {color: rgb(64, 212, 64);}
   }
   .heading{
