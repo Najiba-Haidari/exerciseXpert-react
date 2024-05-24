@@ -57,7 +57,7 @@ THEN that specific card is removed from the list of saved exercises
 ## Deploy Link
 
 - Github Repo URL: https://github.com/Najiba-Haidari/exerciseXpert-react
-- Netlify URL:
+- Netlify URL: https://guileless-chebakia-6ea38c.netlify.app
 
 ## Installation
 
