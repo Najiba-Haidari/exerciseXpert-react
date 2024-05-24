@@ -58,11 +58,10 @@
   }
   .container-card{
     width: 100%;
-  
   }
   .card-box{
     
-    width: 22%;
+    width: 25%;
   }
   .card-box:hover{
     border-top: 4px solid purple;

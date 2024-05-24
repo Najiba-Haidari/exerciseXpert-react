@@ -62,7 +62,7 @@ export default function Main(props) {
                 </select>
                 <input className="btn-submit " value="Search" type="submit" />
             </form>
-            <div className='container'>
+            <div className='container p-0 '>
                 {isSubmitted && bpData ? (
                     bpData.length > 0 ? (
                         <Card bpData={bpData} setBpData={setBpData} />
