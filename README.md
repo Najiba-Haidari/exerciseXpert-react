@@ -8,6 +8,7 @@
 
 <p align="center">
   <img src="./public/screenshot.jpeg" alt="screenshot" width="700" height="500" />
+  <img src="./public/screenshot2.jpeg" alt="screenshot" width="700" height="500" />
 </p>
 
 ## Table of Contents
@@ -22,26 +23,32 @@
 ## User Story
 
 ```md
-As a exercise/workout lover, when I use this app, I want to find different exercises based on body part name.
+As an fitness enthusiast, I want to find different exercises based on body part names 
+so that I can tailor my workouts effectively.
+
 ```
 
 ## Acceptance Criteria
 
 ```md
 WHEN I open the exerciseXpert webpage
-THEN I view the dropdown to select the body part name
+THEN I view a dropdown to select a body part name
+
 WHEN I select a body part name
-THEN I can click on search button
-WHEN I click on search button
-THEN I view the list of exercises for that specific body part
-WHEN I click the save button on any card
-THEN I see the alert for saving successfully
-WHEN I click again on save button on the same card
-THEN I view the alert saying it is already saved
-WHEN I go to Saved Exercises page
-THEN I view the exercises I saved with delete button
-WHEN I click the delete button on any saved exercise
-THEN that specific card is deleted from list of saved items
+AND I click on the search button
+THEN I view a list of exercises for that specific body part
+
+WHEN I click the save button on any exercise card
+THEN I see an alert indicating the exercise has been saved successfully
+
+WHEN I click the save button again on the same exercise card
+THEN I view an alert saying it is already saved
+
+WHEN I navigate to the Saved Exercises page
+THEN I view a list of exercises I have saved, each with a delete button
+
+WHEN I click the delete button on any saved exercise card
+THEN that specific card is removed from the list of saved exercises
 ```
 
 ## Technologies Used
