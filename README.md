@@ -2,8 +2,6 @@
 
 ## Find your favorite exercise by body part in react app.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## Screenshots
 
 <p align="center">
@@ -18,7 +16,6 @@
 - [Technologies Used](#technologies-used)
 - [Deploy Link](#deploy-link)
 - [Installation](#installation)
-- [License](#license)
 
 ## User Story
 
@@ -70,6 +67,3 @@ THEN that specific card is removed from the list of saved exercises
   And/or
 - Just click on deployed app link.
 
-## License
-
-This project is under the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
