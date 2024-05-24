@@ -14,7 +14,7 @@ export default function Main(props) {
         setSelectedBp(e.target.value)
     }
 
-    const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${selectedBp}?limit=10`;
+    const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${selectedBp}?limit=15`;
     const API_KEY = "90e977b5d8mshf5f1067f878f899p12c888jsnc176b90ca77c";
     const getBpData = async function () {
         const options = {
