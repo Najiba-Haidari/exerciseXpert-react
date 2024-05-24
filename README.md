@@ -20,9 +20,14 @@
 - [License](#license)
 
 ## User Story
+
+```md
 As a exercise/workout lover, when I use this app, I want to find different exercises based on body part name.
+```
 
 ## Acceptance Criteria
+
+```md
 WHEN I open the exerciseXpert webpage
 THEN I view the dropdown to select the body part name
 WHEN I select a body part name
@@ -37,6 +42,7 @@ WHEN I go to Saved Exercises page
 THEN I view the exercises I saved with delete button
 WHEN I click the delete button on any saved exercise
 THEN that specific card is deleted from list of saved items
+```
 
 ## Technologies Used
 
@@ -46,14 +52,15 @@ THEN that specific card is deleted from list of saved items
 
 ## Deploy Link
 
-- Github Repo URL: https://github.com/Najiba-Haidari/restful-api
+- Github Repo URL: https://github.com/Najiba-Haidari/exerciseXpert-react
+- Netlify URL:
 
 ## Installation
 
 - Fork the respository
 - npm install
 - npm run dev
-And/or
+  And/or
 - Just click on deployed app link.
 
 ## License
