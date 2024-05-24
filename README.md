@@ -51,7 +51,7 @@ THEN that specific card is removed from the list of saved exercises
 ## Technologies Used
 
 - React
-- React Hooks: useState, useContext
+- React Hooks: useState, useContext (to get savedExercises to other page/component and being able to delete)
 - exercise DB API (extract data for exercises based on body part name and also body parts lists)
 
 ## Deploy Link
