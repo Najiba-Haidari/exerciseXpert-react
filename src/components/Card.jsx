@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ExerciseContext } from '../ExerciseContext';
 
 export default function Cards(props) {
-    const { saveExercise } = useContext(ExerciseContext);
+    const { saveExercise, text } = useContext(ExerciseContext);
 
     return (
         <div className="container-card d-flex flex-row flex-wrap justify-content-center text-start">
@@ -28,7 +28,7 @@ export default function Cards(props) {
                                     ))}</ul>
                                     {/* <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> */}
                                 </div>
-                                <button id="save" className="btn btn-primary w-25" onClick={() => saveExercise(e)}>Save</button>
+                                <button id="save" className="btn btn-primary w-25 p-2" onClick={() => saveExercise(e)}>{text[e.id] || "Save"}</button>
 
                             </div>
 
